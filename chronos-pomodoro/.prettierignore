@@ -1,0 +1,20 @@
+# Dependências
+node_modules/
+
+# Build
+dist/
+build/
+
+# Cache
+.cache/
+.vite/
+
+# Cobertura de testes
+coverage/
+
+# Arquivos diversos
+*.log
+*.lock
+package-lock.json
+.DS_Store
+
