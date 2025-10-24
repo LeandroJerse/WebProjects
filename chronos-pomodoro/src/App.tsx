@@ -1,8 +1,12 @@
+import { Heading } from './components/Heading';
+
+import './styles/global.css';
+import './styles/theme.css';
 export function App() {
   console.log('App');
   return (
     <div>
-      <h1>Chronos Pomodoro</h1>
+      <Heading />
       <p>Este é um cronômetro de pomodoro.</p>
     </div>
   );
