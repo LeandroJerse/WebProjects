@@ -1,73 +1,80 @@
-# React + TypeScript + Vite
+# ⏱️ Chronos Pomodoro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um aplicativo de cronômetro Pomodoro desenvolvido com React, TypeScript e Vite.
 
-Currently, two official plugins are available:
+## 📋 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Chronos Pomodoro é uma aplicação web que implementa a técnica Pomodoro para gerenciamento de tempo. O aplicativo ajuda você a focar em tarefas dividindo o trabalho em intervalos de tempo concentrados, tradicionalmente de 25 minutos.
 
-## React Compiler
+## 🚀 Tecnologias Utilizadas
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- **React 19** - Biblioteca JavaScript para construção de interfaces
+- **TypeScript** - Superset do JavaScript com tipagem estática
+- **Vite** - Build tool e servidor de desenvolvimento rápido
+- **Lucide React** - Biblioteca de ícones modernos
+- **CSS Modules** - Estilização modular com escopamento local
+- **ESLint** - Linter para manter qualidade de código
+- **Prettier** - Formatador de código
 
-## Expanding the ESLint configuration
+## 🎨 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- ⏱️ Cronômetro Pomodoro
+- 🎨 Sistema de tema dark
+- 🎯 Interface moderna e intuitiva
+- 📱 Design responsivo
+- ⚡ Performance otimizada com Vite
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📦 Instalação
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/chronos-pomodoro.git
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. Entre na pasta do projeto:
+```bash
+cd chronos-pomodoro
 ```
+
+3. Instale as dependências:
+```bash
+npm install
+```
+
+## 🛠️ Scripts Disponíveis
+
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Gera a build de produção
+- `npm run preview` - Preview da build de produção
+- `npm run lint` - Executa o linter ESLint
+- `npm run format` - Formata o código com Prettier
+- `npm run format:check` - Verifica a formatação do código
+
+## 🎯 Estrutura do Projeto
+
+```
+chronos-pomodoro/
+├── src/
+│   ├── components/      # Componentes React
+│   │   ├── Heading.tsx
+│   │   └── Heading.module.css
+│   ├── styles/          # Estilos globais
+│   │   ├── global.css
+│   │   └── theme.css
+│   └── App.tsx          # Componente principal
+├── public/              # Arquivos estáticos
+└── index.html           # HTML de entrada
+```
+
+## 🎨 Sistema de Tema
+
+O projeto utiliza CSS Custom Properties para gerenciamento de cores:
+
+- **Gray Scale** - Tons de cinza de 100 a 900
+- **Primary Colors** - Cores primárias e variações
+- **Semantic Colors** - Cores para sucesso, aviso, erro e informação
+- **Text Colors** - Cores de texto para diferentes superfícies
+
+## 📝 Licença
+
+Este projeto está sob a licença MIT.
