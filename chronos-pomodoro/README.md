@@ -1,61 +1,61 @@
 # ⏱️ Chronos Pomodoro
 
-Um aplicativo de cronômetro Pomodoro desenvolvido com React, TypeScript e Vite.
+A Pomodoro timer app built with React, TypeScript, and Vite.
 
-## 📋 Sobre o Projeto
+## 📋 About the Project
 
-Chronos Pomodoro é uma aplicação web que implementa a técnica Pomodoro para gerenciamento de tempo. O aplicativo ajuda você a focar em tarefas dividindo o trabalho em intervalos de tempo concentrados, tradicionalmente de 25 minutos.
+Chronos Pomodoro is a web application that implements the Pomodoro Technique for time management. It helps you stay focused by splitting work into concentrated intervals, traditionally 25 minutes, followed by short breaks.
 
-## 🚀 Tecnologias Utilizadas
+## 🚀 Tech Stack
 
-- **React 19** - Biblioteca JavaScript para construção de interfaces
-- **TypeScript** - Superset do JavaScript com tipagem estática
-- **Vite** - Build tool e servidor de desenvolvimento rápido
-- **Lucide React** - Biblioteca de ícones modernos
-- **CSS Modules** - Estilização modular com escopamento local
-- **ESLint** - Linter para manter qualidade de código
-- **Prettier** - Formatador de código
+- **React 19** – UI library
+- **TypeScript** – Static typing for JavaScript
+- **Vite** – Fast dev server and build tool
+- **Lucide React** – Modern icon set
+- **CSS Modules** – Locally scoped styling
+- **ESLint** – Linting for code quality
+- **Prettier** – Code formatter
 
 ## 🎨 Features
 
-- ⏱️ Cronômetro Pomodoro
-- 🎨 Sistema de tema dark
-- 🎯 Interface moderna e intuitiva
-- 📱 Design responsivo
-- ⚡ Performance otimizada com Vite
+- ⏱️ Pomodoro timer
+- 🌙 Dark theme
+- 🎯 Clean, modern UI
+- 📱 Responsive design
+- ⚡ Optimized performance with Vite
 
-## 📦 Instalação
+## 📦 Installation
 
-1. Clone o repositório:
+1. Clone the repository:
 ```bash
-git clone https://github.com/seu-usuario/chronos-pomodoro.git
+git clone https://github.com/your-user/chronos-pomodoro.git
 ```
 
-2. Entre na pasta do projeto:
+2. Navigate to the project folder:
 ```bash
 cd chronos-pomodoro
 ```
 
-3. Instale as dependências:
+3. Install dependencies:
 ```bash
 npm install
 ```
 
-## 🛠️ Scripts Disponíveis
+## 🛠️ Available Scripts
 
-- `npm run dev` - Inicia o servidor de desenvolvimento
-- `npm run build` - Gera a build de produção
-- `npm run preview` - Preview da build de produção
-- `npm run lint` - Executa o linter ESLint
-- `npm run format` - Formata o código com Prettier
-- `npm run format:check` - Verifica a formatação do código
+- `npm run dev` – Start development server
+- `npm run build` – Create production build
+- `npm run preview` – Preview the production build
+- `npm run lint` – Run ESLint
+- `npm run format` – Format code with Prettier
+- `npm run format:check` – Check code formatting
 
-## 🧱 Estrutura do Projeto
+## 🧱 Project Structure
 
 ```
 chronos-pomodoro/
 ├── src/
-│   ├── components/            # Componentes React (co-location CSS Module)
+│   ├── components/            # React components (CSS Module co-location)
 │   │   ├── Container/
 │   │   │   ├── index.tsx
 │   │   │   └── styles.module.css
@@ -65,31 +65,31 @@ chronos-pomodoro/
 │   │   └── Logo/
 │   │       ├── index.tsx
 │   │       └── styles.module.css
-│   ├── styles/                # Estilos globais e tema
+│   ├── styles/                # Global styles and theme
 │   │   ├── global.css
 │   │   └── theme.css
-│   ├── App.tsx                # Componente raiz
+│   ├── App.tsx                # Root component
 │   └── main.tsx               # Entry point
-├── public/                    # Arquivos estáticos
-└── index.html                 # HTML de entrada
+├── public/                    # Static assets
+└── index.html                 # HTML entry
 ```
 
-## 📝 Mudanças Recentes
+## 📝 Recent Changes
 
-- Reestruturação dos componentes para pastas dedicadas com `index.tsx` e `styles.module.css` (co-location de estilos).
-- Novo componente `Logo` e importação no `App.tsx`.
-- Atualização do `App.tsx` para utilizar `Container`, `Heading` e `Logo` organizando as seções de Menu, Formulário e Footer.
-- Ajustes no `styles/global.css` (reset/base) e uso de variáveis em `styles/theme.css`.
+- Restructured components into dedicated folders with `index.tsx` and `styles.module.css` (style co-location).
+- Added `Logo` component and imported it in `App.tsx`.
++- Updated `App.tsx` to use `Container`, `Heading`, and `Logo` to organize Menu, Form, and Footer sections.
+- Adjusted `styles/global.css` (reset/base) and consolidated theme variables in `styles/theme.css`.
 
-## 🎨 Sistema de Tema
+## 🎨 Theme System
 
-O projeto utiliza CSS Custom Properties para gerenciamento de cores:
+The project uses CSS Custom Properties for color management:
 
-- **Gray Scale** - Tons de cinza de 100 a 900
-- **Primary Colors** - Cores primárias e variações
-- **Semantic Colors** - Cores para sucesso, aviso, erro e informação
-- **Text Colors** - Cores de texto para diferentes superfícies
+- **Gray Scale** – Shades from 100 to 900
+- **Primary Colors** – Primary palette and variations
+- **Semantic Colors** – Success, warning, error, and info
+- **Text Colors** – Text for different surfaces
 
-## 📝 Licença
+## 📝 License
 
-Este projeto está sob a licença MIT.
+This project is licensed under the MIT License.
