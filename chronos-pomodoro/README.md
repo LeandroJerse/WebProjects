@@ -50,21 +50,36 @@ npm install
 - `npm run format` - Formata o código com Prettier
 - `npm run format:check` - Verifica a formatação do código
 
-## 🎯 Estrutura do Projeto
+## 🧱 Estrutura do Projeto
 
 ```
 chronos-pomodoro/
 ├── src/
-│   ├── components/      # Componentes React
-│   │   ├── Heading.tsx
-│   │   └── Heading.module.css
-│   ├── styles/          # Estilos globais
+│   ├── components/            # Componentes React (co-location CSS Module)
+│   │   ├── Container/
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.css
+│   │   ├── Heading/
+│   │   │   ├── index.tsx
+│   │   │   └── styles.module.css
+│   │   └── Logo/
+│   │       ├── index.tsx
+│   │       └── styles.module.css
+│   ├── styles/                # Estilos globais e tema
 │   │   ├── global.css
 │   │   └── theme.css
-│   └── App.tsx          # Componente principal
-├── public/              # Arquivos estáticos
-└── index.html           # HTML de entrada
+│   ├── App.tsx                # Componente raiz
+│   └── main.tsx               # Entry point
+├── public/                    # Arquivos estáticos
+└── index.html                 # HTML de entrada
 ```
+
+## 📝 Mudanças Recentes
+
+- Reestruturação dos componentes para pastas dedicadas com `index.tsx` e `styles.module.css` (co-location de estilos).
+- Novo componente `Logo` e importação no `App.tsx`.
+- Atualização do `App.tsx` para utilizar `Container`, `Heading` e `Logo` organizando as seções de Menu, Formulário e Footer.
+- Ajustes no `styles/global.css` (reset/base) e uso de variáveis em `styles/theme.css`.
 
 ## 🎨 Sistema de Tema
 
