@@ -1,95 +1,95 @@
 # ⏱️ Chronos Pomodoro
 
-A Pomodoro timer app built with React, TypeScript, and Vite.
+Chronos Pomodoro é uma interface web para praticar a Técnica Pomodoro. O foco atual do projeto é consolidar a base visual, os componentes reutilizáveis e a estrutura de código para evoluir rapidamente para um timer funcional.
 
-## 📋 About the Project
+## 📌 Visão Geral
 
-Chronos Pomodoro is a web application that implements the Pomodoro Technique for time management. It helps you stay focused by splitting work into concentrated intervals, traditionally 25 minutes, followed by short breaks.
+- Layout construído com React 19 e TypeScript, inicializado via Vite.
+- Componentização completa com CSS Modules para encapsular estilos.
+- Navegação lateral com ícones Lucide, contador central e formulário para registrar tarefas.
+- Indicador visual de ciclos de trabalho/pausa e rodapé com links úteis.
+- Design tokens definidos em `src/styles/theme.css`, facilitando ajustes de cores e contrastes.
 
-## 🚀 Tech Stack
+## 🚧 Status do Projeto
 
-- **React 19** – UI library
-- **TypeScript** – Static typing for JavaScript
-- **Vite** – Fast dev server and build tool
-- **Lucide React** – Modern icon set
-- **CSS Modules** – Locally scoped styling
-- **ESLint** – Linting for code quality
-- **Prettier** – Code formatter
+> 🔄 MVP em desenvolvimento: a lógica do cronômetro e a persistência dos ciclos ainda serão implementadas.
 
-## 🎨 Features
+## 🧰 Stack Principal
 
-- ⏱️ Pomodoro timer
-- 🌙 Dark theme
-- 🎯 Clean, modern UI
-- 📱 Responsive design
-- ⚡ Optimized performance with Vite
+- React 19 + TypeScript
+- Vite
+- Lucide React
+- CSS Modules
+- ESLint + Prettier
 
-## 📦 Installation
+## ▶️ Executando localmente
 
-1. Clone the repository:
+1. Clone o repositório:
+
 ```bash
 git clone https://github.com/your-user/chronos-pomodoro.git
 ```
 
-2. Navigate to the project folder:
+2. Acesse a pasta do projeto:
+
 ```bash
 cd chronos-pomodoro
 ```
 
-3. Install dependencies:
+3. Instale as dependências:
+
 ```bash
 npm install
 ```
 
-## 🛠️ Available Scripts
+4. Suba o ambiente de desenvolvimento:
 
-- `npm run dev` – Start development server
-- `npm run build` – Create production build
-- `npm run preview` – Preview the production build
-- `npm run lint` – Run ESLint
-- `npm run format` – Format code with Prettier
-- `npm run format:check` – Check code formatting
+```bash
+npm run dev
+```
 
-## 🧱 Project Structure
+O Vite exibirá no terminal o endereço local (geralmente `http://localhost:5173`).
+
+## 📦 Scripts disponíveis
+
+- `npm run dev` – Inicia o servidor de desenvolvimento.
+- `npm run build` – Gera o bundle de produção (compila TypeScript e executa o build do Vite).
+- `npm run preview` – Serve o bundle de produção localmente.
+- `npm run lint` – Executa regras de lint configuradas.
+- `npm run format` – Formata arquivos suportados com o Prettier.
+- `npm run format:check` – Checa formatação sem alterar arquivos.
+
+## 🧱 Estrutura de pastas
 
 ```
 chronos-pomodoro/
 ├── src/
-│   ├── components/            # React components (CSS Module co-location)
+│   ├── components/
 │   │   ├── Container/
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.css
+│   │   ├── CountDown/
+│   │   ├── Cycles/
+│   │   ├── DefaultButton/
+│   │   ├── DefaultInput/
+│   │   ├── Footer/
 │   │   ├── Heading/
-│   │   │   ├── index.tsx
-│   │   │   └── styles.module.css
 │   │   └── Logo/
-│   │       ├── index.tsx
-│   │       └── styles.module.css
-│   ├── styles/                # Global styles and theme
+│   ├── styles/
 │   │   ├── global.css
 │   │   └── theme.css
-│   ├── App.tsx                # Root component
-│   └── main.tsx               # Entry point
-├── public/                    # Static assets
-└── index.html                 # HTML entry
+│   ├── App.tsx
+│   └── main.tsx
+├── public/
+└── index.html
 ```
 
-## 📝 Recent Changes
+## 🛣️ Roadmap
 
-- Restructured components into dedicated folders with `index.tsx` and `styles.module.css` (style co-location).
-- Added `Logo` component and imported it in `App.tsx`.
-+- Updated `App.tsx` to use `Container`, `Heading`, and `Logo` to organize Menu, Form, and Footer sections.
-- Adjusted `styles/global.css` (reset/base) and consolidated theme variables in `styles/theme.css`.
+- Implementar contagem regressiva real com controle de start/stop.
+- Configurar ciclos completos (25/5 minutos) e long break automático.
+- Persistir histórico de sessões e tarefa ativa.
+- Adicionar modo claro/escuro utilizando os tokens do tema.
+- Escrever testes unitários para componentes principais.
 
-## 🎨 Theme System
+## 📜 Licença
 
-The project uses CSS Custom Properties for color management:
-
-- **Gray Scale** – Shades from 100 to 900
-- **Primary Colors** – Primary palette and variations
-- **Semantic Colors** – Success, warning, error, and info
-- **Text Colors** – Text for different surfaces
-
-## 📝 License
-
-This project is licensed under the MIT License.
+Este projeto está licenciado sob a licença MIT.
