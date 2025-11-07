@@ -11,12 +11,24 @@ import { DefaultButton } from './components/DefaultButton';
 import { PlayCircleIcon, StopCircleIcon } from 'lucide-react';
 import { Footer } from './components/Footer';
 import { Heading } from './components/Heading';
+import { useState } from 'react';
 
 export function App() {
-  const number = 0;
+  //Sempre que usar useStates, não usar atribuição diretamente
+  const [number, setNumber] = useState(() => {
+    console.log('Lazy initialization');
+    return 0;
+  });
+  function handleClick() {
+    setNumber((prevState) => prevState + 1);
+  }
   return (
     <>
-      <Heading>Número = {number}</Heading>
+      <Heading>
+        Número = <span id="number">{number}</span>
+      </Heading>
+      <button onClick={handleClick}>Aumenta</button>
+
       <Container>
         <Logo />
       </Container>
@@ -32,7 +44,7 @@ export function App() {
             <DefaultInput
               id="myInput"
               type="text"
-              labelText="task"
+              labelText={number.toString()}
               placeholder="Type Something"
             />
           </div>
