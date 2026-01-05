@@ -1,6 +1,8 @@
 {
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "explorer.compactFolders": false,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
   },
@@ -23,4 +25,3 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
-
